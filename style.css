@@ -221,3 +221,13 @@ footer {
         font-size: 1.8em;
     }
 }
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o texto e a linha */
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
