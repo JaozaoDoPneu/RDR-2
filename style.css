@@ -26,14 +26,14 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 3.5em;
     margin-bottom: 15px;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     animation: fadeInSlideUp 1s forwards 0.5s;
 }
 
 .hero p {
     font-size: 1.3em;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     animation: fadeInSlideUp 1s forwards 1s;
 }
@@ -50,7 +50,7 @@ body {
 .section h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5em;
-    color: #0056b3;
+    color: white;
     margin-bottom: 40px;
     position: relative;
     display: inline-block;
@@ -61,7 +61,7 @@ body {
     display: block;
     width: 60px;
     height: 4px;
-    background-color: #f39c12;
+    background-color: red;
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -78,16 +78,16 @@ body {
 .description-content p {
     flex: 1;
     min-width: 300px;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .description-content p:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
 }
 
 /* Seção Fotos */
@@ -103,18 +103,51 @@ body {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .gallery img:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
 }
 
 body{
     background-color: #ae0001;
+}
+
+/* Seção Curiosidades */
+.curiosities-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: left;
+}
+
+.curiosity-item {
+    flex: 1;
+    min-width: 280px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #007bff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.curiosity-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+    border-color: #ae0001;
+}
+
+.curiosity-item h3 {
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.4em;
 }
 
 footer {
